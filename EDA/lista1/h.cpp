@@ -19,6 +19,5 @@ int main (){
     sort(s, s + n + 1); 
 
     cout << s[0] << endl;
-
     return 0;
 }
