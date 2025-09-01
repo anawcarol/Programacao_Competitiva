@@ -8,9 +8,9 @@ int main(){
 
     cin >> n >> p;
 
-    int t = 2;
+    int t = 1;
     
-    while (t <= n)
+    while (t * p <= n) //entao o total de bacterias vezes o fator de multiplicacao deve ser menor que a capacitade do recipiente 
     {
         t = t * p;
         c++;
