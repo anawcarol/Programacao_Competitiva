@@ -3,25 +3,34 @@ using namespace std;
 
 
 int main() {
-    //estudo pilha
-    stack<int> pilha;
+    int n;
+    cin >> n;
+    string num;
+    num.resize(n);
+    cin >> num;
+    int conta= 0;
+    int contb= 0;
+
+    for (char c : num) {
+        if (c == '1')
+        {
+            conta++;
+        } else if(c == '0') 
+        {
+            contb++;
+        }
     
-    // Push
-    pilha.push(10);
-    pilha.push(20);
-    pilha.push(30);
+    }
+
+    if (conta == contb)
+    {
+        cout << "0" << "\n";
+    } else {
+        cout << abs(conta - contb) << "\n";
+    }
     
-    cout << "Topo: " << pilha.top() << endl;
+
     
-    // Pop
-    pilha.pop();
-    cout << "Novo topo após pop: " << pilha.top() << endl;
-    
-    // Tamanho
-    cout << "Tamanho: " << pilha.size() << endl;
-    
-    // Verificar se está vazia
-    cout << "Vazia? " << (pilha.empty() ? "Sim" : "Não") << endl;
 
 
     return 0;
