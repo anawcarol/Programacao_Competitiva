@@ -12,15 +12,13 @@ int main() {
         int valor;
         cin >> valor;
         pilha.push(valor);
-    }
-
-    for (int i = 0; i < n; i++)
-    {
         if (pilha.top() == 0)
         {
             pilha.pop();
+            pilha.pop();
         }
     }
+
     
     int soma = 0;
     while (!pilha.empty()){
